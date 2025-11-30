@@ -3,68 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportIQ - Home</title>
+    <title>SportIQ - Login</title>
+    <!-- Make sure the file name below matches your CSS file exactly -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="home-body">
+<body class="login-body">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-logo">
-            <img src="logo.png" alt="SportIQ">
-        </div>
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="TopSelling.html">Top Selling</a></li>
-            <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="showMessage('New Arrivals coming soon!')">NEW ARRIVALS</a>
-                    </li>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo-container">
+                <!-- Added width attribute to prevent giant logo issue -->
+                <img src="logo.png" alt="SPORTIQ" class="login-logo" width="120">
+            </div>
 
-                   <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="showMessage('Sales coming soon!')">SALE</a>
-                   </li>
-            <li><a href="secondcart.html">Cart</a></li>
-            <li><a href="secondpayment.html">Payment</a></li>
-        </ul>
-        <div class="nav-icons">
-            <a href="#">&#128100;</a>
-        </div>
-    </nav>
+            <form action="home.html">
+                <label>Email:</label>
+                <input type="email" placeholder="" required>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        
-        <!-- Main Center Content -->
-        <div class="hero-content">
-            <!-- You can add the running man image here if you have it -->
-            <h1>Unleash Your Athletic Potential</h1>
-            <p>Discover premium sports gear designed for champions...</p>
-           <button class="btn-red btn-shop" onclick="window.location.href='categories.html'">
-    Shop Now
-</button>
-        </div>
+                <label>Password:</label>
+                <input type="password" placeholder="" required>
 
-        <!-- Background Logo & Featured Text (At the bottom) -->
-        <div class="bottom-watermark">
-            <!-- The Faint Logo in Background -->
-            <img src="logo.png" alt="Logo Watermark" class="bg-logo">
-            
-            <!-- The Text on top of the logo -->
-            <div class="watermark-text">
-                <h3>Featured Products</h3>
-                <p>Handpicked gear for peak performance</p>
+                <button type="submit" class="btn-red btn-full">Login</button>
+            </form>
+
+            <div class="footer-links">
+                <a href="#">Forgot Password?</a>
+                <a href="signup.html">Create account</a>
             </div>
         </div>
+    </div>
 
-    </section>
-    <script> // To display pop up message
-        function showMessage(message) {
-               alert(message);
-                   }
-</script>
-<footer class="footer">
-           © <span id="year"></span> Sportio. All rights reserved.    
-      </footer>
 </body>
+
 </html>
