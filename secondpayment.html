@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Sportio</title>
+</head>
+<body>
+    <header>
+       <nav class="navbar">
+        <div class="nav-logo">
+            <img src="logo.png" alt="SportIQ">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="TopSelling.html">Top Selling</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showMessage('New Arrivals coming soon!')">NEW ARRIVALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showMessage('Sales coming soon!')">SALE</a>
+            </li>
+            <li><a href="secondcart.html">Cart</a></li>
+            <li><a href="secondpayment.html">Payment</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#">&#128100;</a>
+        </div>
+    </nav>
+</header>
+       <main>
+            <section class="left">
+              <h1>Payment Details</h1>
+              <div class="form-card">
+                  <!-- <label>Full Name</label> -->
+                   <input class="input" type="text" placeholder="Full Name">
+
+                   <div class="form-row">
+                     <input class="input" placeholder="Email" type="email">
+                     <input class="input" placeholder="Phone">
+                    </div>
+                   <input class="input" type="text" placeholder="Address">
+                    <div class="form-row">
+                      <input class="input" placeholder="City">
+                      <input class="input" placeholder="Postal Code">
+                   </div>    
+              </div>
+              <div class="form-card">
+                    <h3>Payment Method</h3>
+                    <label><input type="radio" name="Payment"> Credit/Debit Card</label> <br>
+                    <label><input type="radio" name="Payment"> Cash on Delivery</label> <br>
+                    <label><input type="radio" name="Payment"> Easypaisa / JazzCash</label> <br>
+              </div>
+              <div class="form-card">
+              <input class="input" placeholder="Card Number">
+             
+                  <input class="input" placeholder="MM/YY">
+                  <input class="input" placeholder="CVV">
+              </div>
+
+            </section>
+
+            <aside class="right">
+               <div class="summary">
+                  <h3>Order Summary</h3>
+
+                  <div class="line">Subtotal — $1305</div>
+                  <div class="line">Shipping — $10</div>
+                  <div class="total">Total — $1315</div>
+                  <a href="home.html" class="btn">Confirm Payment</a>
+               </div>
+             </aside>
+       </main>
+       <script> // To display pop up message
+        function showMessage(message) {
+               alert(message);
+                   }</script>
+      <footer class="footer">
+           © <span id="year"></span> Sportio. All rights reserved.    
+      </footer>
+</body>
+</html>

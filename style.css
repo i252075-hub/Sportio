@@ -1,0 +1,189 @@
+/* ========================
+   GLOBAL STYLES
+   ======================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* ========================
+   LOGIN PAGE SPECIFIC STYLES
+   ======================== */
+.login-body {
+    /* This forces the card to the center of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-card {
+    background-color: #1a1a1a; /* Dark Grey background like the picture */
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px; /* Fixed width for the card */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Shadow to make it pop */
+    text-align: center;
+    border: 1px solid #333; /* Slight border to define edges */
+}
+
+.login-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100px; /* Forces logo to be small */
+}
+
+/* Form Elements */
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+label {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #666; /* The Grey Input Color */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box; /* Fixes padding issues */
+}
+
+input:focus {
+    outline: 2px solid #e60000;
+}
+
+/* Login Page Links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* ========================
+   HOME PAGE STYLES
+   ======================== */
+.navbar {
+    background-color: #111;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    z-index: 10;
+    position: relative;
+}
+
+.nav-logo img { height: 40px; }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a, .nav-icons a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover { color: #e60000; }
+
+/* Red Button Style */
+.btn-red {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 0; /* Vertical padding */
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Specific helper for the login button to be full width */
+.btn-full {
+    width: 100%;
+    border-radius: 20px; /* Rounder buttons for login */
+}
+
+/* Specific helper for the Shop Now button */
+.btn-shop {
+    padding: 12px 40px;
+    border-radius: 5px;
+}
+
+.btn-red:hover { background-color: #b30000; }
+
+/* Hero Section */
+.hero {
+    height: 85vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #2e0f0f 0%, #000000 70%);
+    overflow: hidden; 
+}
+
+.bg-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 600px; 
+    opacity: 0.2; 
+    filter: grayscale(100%);
+    z-index: 0; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.hero h1 { font-size: 48px; margin-bottom: 10px; color: white; }
+.hero p { color: #ccc; font-size: 16px; margin-bottom: 30px; }
+
+.bottom-text {
+    position: absolute;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.bottom-text h3 { margin: 0; font-size: 24px; color: white; font-weight: normal; }
+.bottom-text p { margin: 5px 0 0 0; font-size: 14px; color: #aaa; }

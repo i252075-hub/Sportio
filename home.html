@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportIQ - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="logo.png" alt="SportIQ">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="TopSelling.html">Top Selling</a></li>
+            <li class="nav-item">
+                      <a class="nav-link" href="#" onclick="showMessage('New Arrivals coming soon!')">NEW ARRIVALS</a>
+                    </li>
+
+                   <li class="nav-item">
+                      <a class="nav-link" href="#" onclick="showMessage('Sales coming soon!')">SALE</a>
+                   </li>
+            <li><a href="secondcart.html">Cart</a></li>
+            <li><a href="secondpayment.html">Payment</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#">&#128100;</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        
+        <!-- Main Center Content -->
+        <div class="hero-content">
+            <!-- You can add the running man image here if you have it -->
+            <h1>Unleash Your Athletic Potential</h1>
+            <p>Discover premium sports gear designed for champions...</p>
+           <button class="btn-red btn-shop" onclick="window.location.href='categories.html'">
+    Shop Now
+</button>
+        </div>
+
+        <!-- Background Logo & Featured Text (At the bottom) -->
+        <div class="bottom-watermark">
+            <!-- The Faint Logo in Background -->
+            <img src="logo.png" alt="Logo Watermark" class="bg-logo">
+            
+            <!-- The Text on top of the logo -->
+            <div class="watermark-text">
+                <h3>Featured Products</h3>
+                <p>Handpicked gear for peak performance</p>
+            </div>
+        </div>
+
+    </section>
+    <script> // To display pop up message
+        function showMessage(message) {
+               alert(message);
+                   }
+</script>
+<footer class="footer">
+           © <span id="year"></span> Sportio. All rights reserved.    
+      </footer>
+</body>
+</html>
