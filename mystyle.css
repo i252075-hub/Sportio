@@ -125,5 +125,5 @@ main {
     border: 1px solid #333;
     color: white;
     border-radius: 8px;
-    box-sizing: border-box; /* FIXED */
+    box-sizing: border-box; 
 }
